@@ -1,3 +1,9 @@
+# revision 21452
+# category Package
+# catalog-ctan /macros/latex/contrib/he-she
+# catalog-date 2011-02-16 08:41:21 +0100
+# catalog-license lppl1.3
+# catalog-version 1.0
 Name:		texlive-he-she
 Version:	1.0
 Release:	1
@@ -42,6 +48,7 @@ reflect the current gender choice.
 %doc %{_texmfdistdir}/doc/latex/he-she/README
 %doc %{_texmfdistdir}/doc/latex/he-she/he-she.pdf
 %doc %{_texmfdistdir}/doc/latex/he-she/he-she.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ reflect the current gender choice.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
