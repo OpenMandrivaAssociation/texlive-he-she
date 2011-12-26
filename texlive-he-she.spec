@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-he-she
 Version:	1.0
-Release:	1
+Release:	2
 Summary:	Alternating pronouns to aid to gender-neutral writing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/he-she
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package implements a version of semi-automatic pronoun
@@ -28,19 +26,19 @@ pronouns for all case forms, plus anaphoric versions that
 reflect the current gender choice.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
