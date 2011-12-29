@@ -25,16 +25,8 @@ prose. It has upper- and lowercase versions of switching
 pronouns for all case forms, plus anaphoric versions that
 reflect the current gender choice.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -47,7 +39,6 @@ reflect the current gender choice.
 %doc %{_texmfdistdir}/doc/latex/he-she/README
 %doc %{_texmfdistdir}/doc/latex/he-she/he-she.pdf
 %doc %{_texmfdistdir}/doc/latex/he-she/he-she.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,5 +49,3 @@ reflect the current gender choice.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
