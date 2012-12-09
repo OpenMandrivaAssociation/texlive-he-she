@@ -49,3 +49,22 @@ reflect the current gender choice.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-4
++ Revision: 758889
+- Update to latest upstream release
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-3
++ Revision: 752545
+- Rebuild to reduce used resources
+- texlive-he-she
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
++ Revision: 718614
+- texlive-he-she
+- texlive-he-she
+- texlive-he-she
+- texlive-he-she
+
