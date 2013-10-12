@@ -1,12 +1,12 @@
-# revision 24938
+# revision 29290
 # category Package
 # catalog-ctan /macros/latex/contrib/he-she
-# catalog-date 2011-02-16 08:41:21 +0100
+# catalog-date 2013-03-04 16:31:08 +0100
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-he-she
-Version:	1.0
-Release:	4
+Version:	1.1
+Release:	1
 Summary:	Alternating pronouns to aid to gender-neutral writing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/he-she
@@ -49,22 +49,3 @@ reflect the current gender choice.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-4
-+ Revision: 758889
-- Update to latest upstream release
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-3
-+ Revision: 752545
-- Rebuild to reduce used resources
-- texlive-he-she
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 718614
-- texlive-he-she
-- texlive-he-she
-- texlive-he-she
-- texlive-he-she
-
