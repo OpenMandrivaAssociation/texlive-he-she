@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 1.1
 Name:		texlive-he-she
-Version:	1.1
-Release:	10
+Version:	1.3
+Release:	1
 Summary:	Alternating pronouns to aid to gender-neutral writing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/he-she
