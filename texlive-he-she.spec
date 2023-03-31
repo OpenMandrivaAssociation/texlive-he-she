@@ -1,6 +1,6 @@
 Name:		texlive-he-she
 Version:	41359
-Release:	1
+Release:	2
 Summary:	Alternating pronouns to aid to gender-neutral writing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/he-she
