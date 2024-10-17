@@ -3,7 +3,7 @@ Version:	41359
 Release:	2
 Summary:	Alternating pronouns to aid to gender-neutral writing
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/he-she
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/he-she
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/he-she.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/he-she.doc.r%{version}.tar.xz
